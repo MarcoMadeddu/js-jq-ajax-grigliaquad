@@ -2,11 +2,9 @@ $(document).ready(function(){
     console.log("js is done");
     var myApi = "https://flynn.boolean.careers/exercises/api/random/int";
     var boxes = $(".box");
-    var click= false;
 
     boxes.click(function(){
         var thisBtn = $(this);
-        thisBtn.removeClass("green yellow");
         if(thisBtn.text()== ""){
             $.ajax({
                 url : myApi,
